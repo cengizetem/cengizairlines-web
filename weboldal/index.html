@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal | Cengiz Airlines</title>
+    <link rel="stylesheet" href="./src/css/bulma.min.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/all.js"></script>
+  </head>
+  
+<body>
+  <div id="kijelentkezet" title="Cengiz Airlines">
+    <p>
+      <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+      Sikeresen kijelentkezett a Felhasználói felületből!
+    </p>
+  </div>
+    <datalist id="varosok">
+    </datalist>
+    <nav class="navbar container" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="./public/logo.png" width="160" height="30">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/">
+              Home
+            </a>
+             
+            <a class="navbar-item" href="kapcsolat">
+                Kapcsolat
+              </a>
+            
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-black" href="login">
+                  <strong>Login</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="container hero header">
+        <div class="hero-body">
+          <h1 class="title is-1 has-text-centered has-text-white">Készen állsz az utazásra?</h1>
+          <div class="search">
+            <span class="button is-rounded is-black" id="egyirany" >Egyiranyu</span>
+            <div id="search-iranyu">
+                <div class="field honnan">
+                    <label class="label"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+                         Honnan</label>
+                    <div class="control">
+                      <input class="input" type="text" name="honnan" id="honnan" placeholder="" list="varosok">
+                          </div>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label"> <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                         Hová</label>
+                    <div class="control">
+                          <input class="input" type="text" name="hova" id="hova" placeholder="" list="varosok"> 
+                    </div>
+                  </div>
+                       
+
+                  <div class="field">
+                    <label class="label"> <i class="fa fa-table" aria-hidden="true"></i>
+                         Mikortól</label>
+                    <div class="control">
+                      <input type="date" name="mikor" id="mikor" min="2022-12-01">
+                    </div>
+                  </div>
+        
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-black" id="kereses">Keresés</button>
+                    </div>
+        </div>
+        
+    </div>
+        </div>
+      </header>
+      <section class="container heros kereses-hero" id="kereses_feltetel">
+        <h1 class="title">Keresési feltétel</h1>
+        <p  class="subtitle" id="utazas">Utazás: <span id="hol_feltetel"></span></p>
+        <p  class="subtitle">Dátum: <span id="mikor_feltetel"></span></p>
+        <p class="has-text-danger title is-5" id="hibauzenet" style="margin-top: 20px">Nem jó inputot adtál meg, helyes input: varos (ISO)</p>
+      </section>
+
+      <section class="container hero talalat-hero" id="talalatok">
+        
+      </section>
+
+
+      <section class="container hero">
+        <div class="hero-body">
+          <div class="columns is-vcentered hero-1">
+          <div class="column">
+            <h1 class="title has-text-centered">Fedezze fel a világot olcsón!</h1>
+          </div>
+          <div class="column">
+            <img src="./public/hero-1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="columns is-vcentered ">
+          <div class="column ">
+            <h1 class="title has-text-centered is-hidden-tablet" >Utazz biztonságosan!</h1>
+            <img src="./public/hero-2.jpg" alt="">
+            
+          </div>
+          <div class="column">
+            <h1 class="title has-text-centered is-hidden-mobile" >Utazz biztonságosan!</h1>
+          </div>
+        </div>
+
+        <div class="columns is-vcentered hero-1">
+          <div class="column">
+            <h1 class="title has-text-centered">Élvezze az utazást!</h1>
+          </div>
+          <div class="column">
+            <img src="./public/hero-3.jpg" alt="">
+          </div>
+        </div>
+
+        </div>
+      </section>
+      <section class="container hero">
+          <h1 class="title has-text-centered is-1">Híres helyek</h1>
+          <div class="columns hires is-multiline">
+            <div class="column">
+              <div class="box hun"></div>
+              <p class="title is-4 has-text-black has-text-centered">Magyarország</p>
+            </div>
+            
+            <div class="column">
+              <div class="box spain"></div>
+              <p class="title is-4 has-text-black has-text-centered">Spanyolország</p>
+            </div>
+
+            <div class="column">
+              <div class="box turkey"></div>
+              <p class="title is-4 has-text-black has-text-centered">Törökország</p>
+            </div>
+
+          </div>
+      </section>
+      <footer class="hero hero-footer container">
+        <div class="hero-foot has-text-centered">
+          <p class="has-text-white is-1">
+            
+© 2022 Cengiz Airlines. Minden jog fenntartva. A védjegyek jogos tulajdonosaiké az Egyesült Államokban és más országokban.
+Minden ár tartalmazza az áfát
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

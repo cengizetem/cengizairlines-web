@@ -1,0 +1,123 @@
+.header {
+    background-image: url(../../public/index_header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    margin: 0 auto;
+    /**padding: 10px;*/
+}
+
+.input {
+    width: 150px;
+}
+
+.honnan {
+    margin-top: 20px;
+}
+.search {
+    max-width: 390px;
+    width: 90%;
+    background-color: hsl(0, 0%, 96%);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+input[type=date]{
+    -webkit-appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(.5em - 1px);
+    padding-left: calc(.75em - 1px);
+    padding-right: calc(.75em - 1px);
+    padding-top: calc(.5em - 1px);
+    position: relative;
+    vertical-align: top;
+    border-color: #dbdbdb;
+}
+
+.hires .box {
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.hires .colum {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.hun {
+    background-image: url(../../public/hun.jpg);
+}
+
+.spain {
+    background-image: url(../../public/spain.jpg);
+}
+
+.hires {
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.turkey {
+    background-image: url(../../public/turkey.jpg);
+}
+
+.hero-footer {
+    background-color: black;
+    -webkit-border-top-left-radius: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-topleft: 20px;
+-moz-border-radius-topright: 20px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.kereses-hero {
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 96%);
+    padding: 25px;
+}
+
+.talalat-hero {
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 96%);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+
+
+.osszesen {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+#utazas {
+    margin-top: 20px;
+}

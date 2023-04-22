@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés | Cengiz Airlines </title>
+    <link rel="stylesheet" href="./src/css/bulma.min.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./src/js/login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class=" hero  is-fullheight">
+        <div class="hero-body">
+            <div class="box">
+                <a class="has-text-black" href="/">Főoldal</a>
+                <h1 class="title has-text-centered has-text-black">Bejelentkezés</h1>
+                <div class="field">
+                    <label class="label">Felhasználó</label>
+                    <div class="control">
+                      <input class="input" type="text" id="username" placeholder="">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Jelszó</label>
+                    <div class="control">
+                      <input class="input" type="password" id="passwd" placeholder="">
+                    </div>
+                  </div>
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-black" id="belepes">Belépés</button>
+                    </div>
+                  </div>
+                  <p class="has-text-centered subtitle  is-6 has-text-danger" id="hiba"><span id="uzenet"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
